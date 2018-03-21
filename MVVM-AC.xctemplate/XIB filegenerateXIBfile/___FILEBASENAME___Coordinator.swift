@@ -10,11 +10,9 @@ class ___FILEBASENAMEASIDENTIFIER___: BaseCoordinator<Void> {
     }
     
     override func start() -> Observable<Void> {
-        let viewController = ___VARIABLE_productName:identifier___ViewController.initFromStoryboard(name: "Main")
+        let viewController = ___VARIABLE_productName:identifier___ViewController.instantiate(with: ___VARIABLE_productName:identifier___ViewModel())
         let navigationController = UINavigationController(rootViewController: viewController)
         
-        let viewModel = ___VARIABLE_productName:identifier___ViewModel()
-        viewController.viewModel = viewModel
         return Observable.never()
     }
 }

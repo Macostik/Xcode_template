@@ -4,9 +4,10 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
+class ___FILEBASENAMEASIDENTIFIER___: UIViewController, ViewModelBased {
     
-    var viewModel: ___FILEBASENAMEASIDENTIFIER___ViewModel!
+    typealias ViewModel = ___VARIABLE_productName:identifier___ViewModel
+    var viewModel: ViewModel?
     private let disposeBag = DisposeBag()
 
     deinit {
@@ -25,7 +26,4 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     private func setupBindings() {
         
     }
-
 }
-
-
