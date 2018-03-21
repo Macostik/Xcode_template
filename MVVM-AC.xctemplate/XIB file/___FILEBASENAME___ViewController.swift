@@ -4,7 +4,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class ___FILEBASENAMEASIDENTIFIER___: UIViewController, ViewModelBased {
+class ___FILEBASENAMEASIDENTIFIER___: BaseViewController, StoryboardBased, ViewModelBased {
     
     typealias ViewModel = ___VARIABLE_productName:identifier___ViewModel
     var viewModel: ViewModel?
