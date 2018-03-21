@@ -5,6 +5,8 @@ import RxSwift
 
 class ___FILEBASENAMEASIDENTIFIER___: BaseCoordinator<Void> {
     
+    private let rootViewController: UIViewController
+    
     init(rootViewController: UIViewController) {
         self.rootViewController = rootViewController
     }
