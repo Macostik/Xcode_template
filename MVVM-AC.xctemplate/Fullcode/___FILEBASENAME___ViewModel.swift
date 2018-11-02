@@ -50,4 +50,5 @@ final class ___FILEBASENAMEASIDENTIFIER___<Element> {
                 .subscribe(loadAction.inputs)
                 .disposed(by: disposeBag)
         }
+    }
 }

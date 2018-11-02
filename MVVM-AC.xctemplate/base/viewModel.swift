@@ -19,12 +19,12 @@ final class ___FILEBASENAMEASIDENTIFIER___<Element> {
         self.dependencies = dependencies
         
         loadAction = Action { page in
-//            var request = baseRequest
-//            request.page = page
-//
-//            return session.rx
-//                .response(request)
-//                .map(AnyPaginationResponse.init)
+            //            var request = baseRequest
+            //            request.page = page
+            //
+            //            return session.rx
+            //                .response(request)
+            //                .map(AnyPaginationResponse.init)
         }
         
         indicatorViewAnimating = loadAction.executing.asDriver(onErrorJustReturn: false)
@@ -50,5 +50,5 @@ final class ___FILEBASENAMEASIDENTIFIER___<Element> {
                 .subscribe(loadAction.inputs)
                 .disposed(by: disposeBag)
         }
+    }
 }
-
