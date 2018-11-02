@@ -1,18 +1,14 @@
 //  ___FILEHEADER___
 
 import UIKit
+import RealmSwift
 
-struct ___FILEBASENAMEASIDENTIFIER___{
+final class ___FILEBASENAMEASIDENTIFIER___: Object {
 
-    // Add you own variable  for a ___VARIABLE_productName:identifier___.
-    // ...
-  
-    init() {
-
-    }
-
-    init?(from json: [String: Any]) {
-        
+    @objc dynamic public var id = 0
+    
+    override static func primaryKey() -> String? {
+        return "id"
     }
 
 }

@@ -1,17 +1,14 @@
 //  ___FILEHEADER___
 
-import Foundation
+import UIKit
+import RealmSwift
 
-struct ___FILEBASENAMEASIDENTIFIER___ {
-    var <#property#>: <#PropertyType#>
-}
-
-extension ___FILEBASENAMEASIDENTIFIER___ {
-    init?(from json: [String: Any]) {
-        guard
-            let <#property#> = json["<#key#>"] as? <#Type#>
-            else { return nil }
-        
-        self.init(<#property#>: <#property#>)
+final class ___FILEBASENAMEASIDENTIFIER___: Object {
+    
+    @objc dynamic public var id = 0
+    
+    override static func primaryKey() -> String? {
+        return "id"
     }
+    
 }

@@ -7,13 +7,13 @@ class ___FILEBASENAMEASIDENTIFIER___Controller: BaseViewController, StoryboardBa
     typealias ViewModel = ___VARIABLE_productName:identifier___ViewModel
     var viewModel: ViewModel?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        bindingViewModel()
+    override func setupUI() {
+       
     }
     
-    private func bindingViewModel() {
-        
+    override func setupBindings() {
+        viewModel.indicatorViewAnimating.drive(<#drive#>)),
+        viewModel.elements.drive(<#drive#>)),
+        viewModel.loadError.drive(onNext: {<#drive#>}),
     }
 }

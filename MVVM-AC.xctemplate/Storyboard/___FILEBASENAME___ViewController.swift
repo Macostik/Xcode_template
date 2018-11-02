@@ -4,26 +4,18 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class ___FILEBASENAMEASIDENTIFIER___: BaseViewController, StoryboardBased, ViewModelBased {
+class ___FILEBASENAMEASIDENTIFIER___Controller: BaseViewController, StoryboardBased, ViewModelBased {
     
     typealias ViewModel = ___VARIABLE_productName:identifier___ViewModel
     var viewModel: ViewModel?
-    private let disposeBag = DisposeBag()
     
-    deinit {
+    override func setupUI() {
         
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setupUI()
-        setupBindings()
-    }
-    
-    private func setupUI() {
-        
-    }
-    private func setupBindings() {
-        
+    override func setupBindings() {
+        viewModel.indicatorViewAnimating.drive(<#drive#>)),
+        viewModel.elements.drive(<#drive#>)),
+        viewModel.loadError.drive(onNext: {<#drive#>}),
     }
 }

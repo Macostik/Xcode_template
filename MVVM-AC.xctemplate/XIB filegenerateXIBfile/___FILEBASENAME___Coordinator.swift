@@ -6,9 +6,12 @@ import RxSwift
 class ___FILEBASENAMEASIDENTIFIER___: BaseCoordinator<Void> {
     
     private let rootViewController: UIViewController
+    private let window: UIWindow
+    private let dependencies: Dependency
     
-    init(rootViewController: UIViewController) {
-        self.rootViewController = rootViewController
+    init(window: UIWindow, dependencies: Dependency) {
+        self.window = window
+        self.dependencies = dependencies
     }
     
     override func start() -> Observable<Void> {
