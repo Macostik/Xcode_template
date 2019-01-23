@@ -2,7 +2,7 @@
 
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___Controller: BaseViewController, StoryboardBased, ViewModelBased {
+class ___FILEBASENAMEASIDENTIFIER___: BaseViewController, StoryboardBased, ViewModelBased {
     
     typealias ViewModel = ___VARIABLE_productName:identifier___ViewModel
     var viewModel: ViewModel?
