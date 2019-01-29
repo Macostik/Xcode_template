@@ -5,14 +5,14 @@ import RxSwift
 import RxCocoa
 import Action
 
-final class ___FILEBASENAMEASIDENTIFIER___<Element> {
+final class ___FILEBASENAMEASIDENTIFIER___ {
     
     public let dependencies: Dependency
     public let elements: Driver<[Element]>
     public let loadError: Driver<Error>
     public let indicatorViewAnimating: Driver<Bool>
     
-    private let loadAction: Action<<#Void#>, <#Void#><Element>>
+    private let loadAction: Action<<#Void#>, <#Void#>>
     private let disposeBag = DisposeBag()
     
     init(dependencies: Dependency) {
