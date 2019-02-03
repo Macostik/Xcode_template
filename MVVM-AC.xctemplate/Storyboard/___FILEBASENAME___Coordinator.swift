@@ -5,7 +5,6 @@ import RxSwift
 
 class ___FILEBASENAMEASIDENTIFIER___: BaseCoordinator<Void> {
     
-    private let rootViewController: UIViewController
     private let window: UIWindow
     private let dependencies: Dependency
     
@@ -15,7 +14,7 @@ class ___FILEBASENAMEASIDENTIFIER___: BaseCoordinator<Void> {
     }
     
     override func start() -> Observable<Void> {
-        let viewModel = ___VARIABLE_productName:identifier___ViewModel()
+        let viewModel = ___VARIABLE_productName:identifier___ViewModel((dependencies: dependencies))
         let viewController = ___VARIABLE_productName:identifier___ViewController.instantiate(with: viewModel)
         let navigationController = UINavigationController(rootViewController: viewController)
         
