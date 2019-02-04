@@ -15,8 +15,8 @@ class ___FILEBASENAMEASIDENTIFIER___: BaseViewController, StoryboardBased, ViewM
     }
     
     override func setupBindings() {
-        viewModel?.indicatorViewAnimating.drive(<#drive#>),
-        viewModel?.elements.drive(<#drive#>),
-        viewModel?.loadError.drive(onNext: {<#drive#>}),
+//        viewModel?.indicatorViewAnimating.drive(<#drive#>),
+//        viewModel?.elements.drive(<#drive#>),
+//        viewModel?.loadError.drive(onNext: {<#drive#>}),
     }
 }

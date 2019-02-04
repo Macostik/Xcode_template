@@ -14,7 +14,7 @@ class ___FILEBASENAMEASIDENTIFIER___: BaseCoordinator<Void> {
     }
     
     override func start() -> Observable<Void> {
-        let viewModel = ___VARIABLE_productName:identifier___ViewModel((dependencies: dependencies))
+        let viewModel = ___VARIABLE_productName:identifier___ViewModel(dependencies: dependencies)
         let viewController = ___VARIABLE_productName:identifier___ViewController.instantiate(with: viewModel)
         let navigationController = window.rootViewController as? UINavigationController
         navigationController?.pushViewController(viewController, animated: false)
