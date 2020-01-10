@@ -10,5 +10,4 @@ final class ___FILEBASENAMEASIDENTIFIER___: Object {
     override static func primaryKey() -> String? {
         return "id"
     }
-
 }
